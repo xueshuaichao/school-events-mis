@@ -1,0 +1,26 @@
+/*
+ * @des {{ name }}
+ * */
+
+import Main from '../view/main/main.vue';
+
+export default {
+    path: '/',
+    meta: {
+        show: false,
+        i18n: '{{name}}.home',
+        icon: 'icon3',
+    },
+    component: Main,
+    children: [
+        {
+            path: '/{{name}}',
+            name: '{{name}}Manage',
+            meta: {
+                show: true,
+                i18n: '{{name}}.change',
+            },
+            component: () => import('../view/{{name}}/index.vue'),
+        },
+    ],
+};

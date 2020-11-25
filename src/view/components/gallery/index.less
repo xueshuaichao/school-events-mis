@@ -1,0 +1,86 @@
+@import "../../../less/variables.less";
+.gallery-wrap {
+    width: 100%;
+    height: 396px;
+    .gallery-skeleton {
+        width: 100%;
+        background-color: #eee;
+        height: 396px;
+    }
+    .swiper-container {
+        height: 100%;
+        background-color: @black;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+        background-size: 10px 22px;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .swiper-slide {
+        background-size: cover;
+        background-position: center;
+        align-items: center;
+        display: flex;
+        img {
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+            vertical-align: middle;
+        }
+    }
+
+    .gallery-top {
+        height: 100%;
+        width: 100%;
+    }
+
+    .gallery-thumbs {
+        height: 86px;
+        box-sizing: content-box;
+        position: relative;
+        bottom: 86px;
+        padding: 8px 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        .swiper-button-prev,
+        .swiper-button-next {
+            height: 86px;
+            width: 42px;
+            margin: 0;
+            top: 0;
+            bottom: 0;
+        }
+
+        .swiper-button-prev {
+            left: 0px;
+        }
+
+        .swiper-button-next {
+            right: 0px;
+        }
+    }
+
+    .gallery-thumbs .swiper-slide {
+        height: 100%;
+        opacity: 0.6;
+        width: auto;
+        border: 2px solid #fff;
+        margin: 0 4px;
+        box-sizing: border-box;
+    }
+
+    .gallery-thumbs .swiper-slide-active {
+        opacity: 1;
+        border: 2px solid #fff;
+    }
+    .ivu-carousel {
+        height: 100px;
+        background-color: #f00;
+    }
+    .small-gallery {
+        display: flex;
+        .ivu-carousel-item {
+            flex: 1;
+        }
+    }
+}

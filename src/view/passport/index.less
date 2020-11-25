@@ -1,0 +1,177 @@
+@import "../../less/variables";
+
+.passport {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    .background {
+        height: 100%;
+        width: 100%;
+        background: @white;
+        background-size: cover;
+        img {
+            position: absolute;
+        }
+        .top {
+            width: 198px;
+            top: 60px;
+            left: 70px;
+        }
+        .right {
+            width: 99px;
+            top: 27px;
+            right: 0;
+        }
+        .bottom {
+            width: 232px;
+            right: 61px;
+            bottom: 110px;
+        }
+        .left {
+            width: 159px;
+            bottom: 0;
+            left: 0;
+        }
+    }
+
+    .content {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        width: 1050px;
+        height: 476px;
+        padding: 20px;
+        border-radius: 3px;
+        background: @white;
+        box-shadow: 0 18px 26px 0px rgba(12, 79, 198, 0.1);
+        border: 1px solid rgba(250, 250, 250, 1);
+        background-image: url(../../assets/images/passport/login-bg.png);
+        background-repeat: no-repeat;
+        background-size: 526px auto;
+        background-position: left bottom;
+    }
+    .logo {
+        position: absolute;
+        left: 32px;
+        top: 24px;
+        img {
+            width: 125px;
+        }
+    }
+    #login {
+        position: absolute;
+        right: 72px;
+        width: 380px;
+        height: 100%;
+        padding-top: 46px;
+        .ivu-input,
+        .ivu-btn {
+            height: 56px;
+            font-size: 16px;
+        }
+        .ivu-btn {
+            margin-top: 10px;
+            margin-right: 0;
+            font-size: 16px;
+        }
+        .common-icon {
+            line-height: 56px;
+        }
+    }
+    h1 {
+        margin-bottom: 24px;
+        text-align: left;
+        font-weight: normal;
+        font-size: 30px;
+        color: @black;
+        p {
+            font-size: 16px;
+            color: @grayOne;
+        }
+    }
+    .captcha {
+        position: absolute;
+        width: 100px;
+        height: 30px;
+        top: 2px;
+        right: 2px;
+        border-left: 1px solid @darkBorderColor;
+    }
+
+    .send-captcha {
+        width: 100px;
+    }
+
+    .agreement {
+        margin-bottom: 15px;
+    }
+
+    .cancel {
+        margin-top: 15px;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 10px;
+    }
+
+    .tips {
+        font-size: 10px;
+        text-align: center;
+        color: #c3c3c3;
+    }
+    .forget-password {
+        margin-top: -10px;
+        cursor: pointer;
+        text-align: right;
+        font-size: 14px;
+        color: @blue;
+    }
+}
+/*******************  重置密码  ********************/
+.passport-modal {
+    text-align: center;
+    .icon-exclam {
+        display: inline-block;
+        width: 81px;
+        height: 81px;
+        background: url(data:image/png;base64,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)
+            0 0 no-repeat;
+        margin: 12px 0;
+    }
+    .tip {
+        text-align: center;
+        font-size: 16px;
+        color: @black;
+    }
+    .ivu-input,
+    .ivu-btn {
+        height: 44px;
+        font-size: 14px;
+    }
+    .code .ivu-form-item-content {
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        justify-content: space-between;
+        img {
+            border-radius: 2px;
+        }
+        .mar-l-12 {
+            width: 128px;
+            flex-shrink: 0;
+            margin-left: 12px;
+        }
+    }
+    .ivu-btn {
+        width: 100%;
+    }
+    .prev {
+        margin-top: -10px;
+        font-size: 14px;
+        text-align: left;
+    }
+}

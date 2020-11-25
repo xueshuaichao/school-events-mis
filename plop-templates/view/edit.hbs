@@ -1,0 +1,95 @@
+<template>
+    <page-edit @on-save="handleSave">
+        <i-form
+            ref="form"
+            :model="form"
+            :rules="rules"
+            class="edit"
+            :label-width="90"
+        >
+            <h5 class="h5-title">
+                基本信息
+            </h5>
+            <div class="flex-row">
+                <div class="small">
+                    <form-item
+                        label="姓名"
+                        prop="name"
+                    >
+                        <i-input
+                            v-model="form.name"
+                            :maxlength="10"
+                        />
+                    </form-item>
+                </div>
+            </div>
+        </i-form>
+    </page-edit>
+</template>
+
+<script>
+/* eslint-disable no-restricted-globals */
+import { mapMutations } from 'vuex';
+import PageEdit from '@/view/components/page/edit.vue';
+
+export default {
+    name: 'Edit',
+    components: {
+        'page-edit': PageEdit,
+    },
+    data() {
+        return {
+            form: {
+                student_id: '',
+                name: '',
+                sex: '1',
+                age: '',
+                grade_id: '',
+                class_id: '',
+                nation: '1',
+                register_time: '',
+                // ID_type: '1',
+                // ID_number: '',
+                province: '',
+                city: '',
+                home_area: '',
+                number: '',
+                parent_name: '',
+                parent_phone: '',
+                live_type: '1',
+            },
+            studentInfo: {},
+            rules: {
+                name: {
+                    required: true,
+                    message: '请填写姓名',
+                    trigger: 'blur',
+                },
+                class_id: {
+                    required: true,
+                    message: '请选择班级',
+                    trigger: 'change',
+                },
+                sex: {
+                    message: '请选择性别',
+                    trigger: 'change',
+                },
+                nation: {
+                    message: '请选择民族',
+                    trigger: 'change',
+                },
+                number: {
+                    message: '请填写学工号',
+                    trigger: 'blur',
+                },
+            },
+        };
+    },
+    created() {
+    },
+    methods: {
+        ...mapMutations(['openMainSpin']),
+        handleSave() {},
+    },
+};
+</script>

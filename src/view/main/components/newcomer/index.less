@@ -1,0 +1,80 @@
+@import "../../../../less/variables";
+.newcomer {
+    &-content {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 414px;
+        height: 236px;
+        padding: 16px 24px;
+        text-align: center;
+        font-size: 14px;
+        color: @fontColor;
+        background-color: white;
+        border-radius: 8px;
+        z-index: 1001;
+        &-1,
+        &-6 {
+            left: 50%;
+            top: 50%;
+            margin-left: -207px;
+            margin-top: -118px;
+        }
+
+        &-2 {
+            left: 212px;
+            top: 115px;
+        }
+
+        &-3 {
+            left: 212px;
+            top: 189px;
+        }
+
+        &-4 {
+            left: 212px;
+            top: 138px;
+        }
+
+        &-5 {
+            left: 212px;
+            top: 44px;
+        }
+
+        .skip {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            font-size: 14px;
+            color: @grayOne;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+    &-sider {
+        position: fixed;
+        left: 0;
+        z-index: 10001;
+    }
+    &-sider-1 {
+        top: 60px;
+    }
+    &-sider-2 {
+        top: 200px;
+    }
+    &-sider-3 {
+        top: 129px;
+    }
+    &-sider-4 {
+        top: 60px;
+    }
+}
+@keyframes fadeIn {
+    0% {
+        transform: scale(0.8);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

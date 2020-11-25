@@ -1,0 +1,32 @@
+@import "../var";
+
+/*普通按钮样式及状态*/
+.edui-toolbar {
+    background: @mainColor;
+    .edui-button {
+        .edui-button-wrap {
+            position: relative;
+            border: @btn-border;
+            padding: 5px;
+            margin: 3px;
+            transition: border, background-color 0.3s ease-in-out;
+
+            &:hover {
+                background-color: @btn-bg-hover;
+                border-color: @borderColor;
+            }
+
+            &:active {
+                background-color: @btn-bg-color;
+                border-color: @borderColor;
+            }
+        }
+
+        .edui-state-checked {
+            .edui-button-wrap {
+                background-color: @btn-bg-active;
+                border-color: @borderColor;
+            }
+        }
+    }
+}

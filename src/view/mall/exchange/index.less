@@ -1,0 +1,37 @@
+@import "../../../less/variables";
+.exchange {
+    &-detail {
+        .item {
+            width: 100%;
+            margin-bottom: 24px;
+        }
+        .info > div {
+            flex: 1;
+        }
+        .info {
+            display: flex;
+            flex-flow: row;
+            margin-bottom: 40px;
+        }
+        .gift-images {
+            vertical-align: top;
+            display: inline-block;
+            .item {
+                width: 90px;
+                height: 90px;
+                background: rgba(242, 246, 252, 1);
+                margin-right: 16px;
+                border-radius: 4px;
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+#exchange {
+    .ivu-input-wrapper,
+    .ivu-select {
+        width: 260px;
+        margin-right: 16px;
+    }
+}

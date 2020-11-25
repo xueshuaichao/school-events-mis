@@ -1,0 +1,1 @@
+sed -i 's/http:\/\/aitiaozhan.test.wdyclass.com/http:\/\/aitiaozhan.test.wdyclass.com/g' ./dist/js/*.js

@@ -1,0 +1,176 @@
+﻿@btn-icon-size: 18px;
+@btn-margin: 0;
+@btn-padding: 5px;
+@btn-split-padding: 5px;
+@btn-combox-font-size: 12px;
+@btn-combox-line-height: auto;
+@btn-combox-width: 30px;
+
+@cheeseMain: #ffd600;
+@borderColor: #ddd;
+@mainColor: white;
+@mainDark: #444444;
+@btn-bg-color: @mainColor;
+@btn-bg-hover: lighten(@btn-bg-color, 10%);
+@btn-bg-active: lighten(@btn-bg-color, 20%);
+@btn-bg-checked: lighten(@btn-bg-color, 15%);
+@btn-bg-open: lighten(@btn-bg-color, 20%);
+
+@btn-color: @mainDark;
+@btn-border: 1px solid @btn-bg-color;
+@btn-border-hover-color: lighten(@btn-bg-color, 10%);
+@btn-border-active-color: lighten(@btn-bg-color, 20%);
+@btn-border-checked-color: lighten(@btn-bg-color, 15%);
+@btn-border-open-color: #fff;
+
+//border
+@border: @btn-border;
+@border-hover-color: @borderColor;
+@border-active-color: @btn-border-active-color;
+@border-checked-color: @btn-border-checked-color;
+@border-open-color: @btn-border;
+
+//popup
+@popup-arrow-color: #fff;
+@arrow-color: @mainDark;
+
+//edui-editor
+@edui-editor-border: 1px solid @borderColor;
+@edui-editor-bgc: #fff;
+@edui-editor-bottom-border: @edui-editor-border;
+
+//toolbar
+@toolbarbox-outer-bg: #fff;
+@toolbarbox-outer-order: 1px solid @borderColor;
+
+//dialog
+@dialoag-bg: #fff;
+@dialoag-title-bg: darken(@dialoag-bg, 10%);
+@dialoag-title-padding: 5px;
+@dialoag-title-border: 1px solid darken(@dialoag-bg, 10%);
+@dialoag-footer-bg: darken(@dialoag-title-bg, 10%);
+@dialoag-footer-padding: @dialoag-title-padding;
+@dialoag-footer-btn-font-size: 10px;
+@dialoag-footer-btn-padding: 3px 5px;
+@dialoag-footer-btn-bg: #eee;
+@dialog-footer-btn-ok-bg: @mainColor;
+@dialog-footer-btn-ok-color: #fff;
+
+//menu
+@menu-body-minwidth: 170px;
+@menu-item-padding: 5px;
+@menu-item-hover-bg: @borderColor;
+@menu-item-hover-color: @mainDark;
+
+//popup
+@popup-border: 1px solid #ccc;
+
+//icons
+@icon-font-family: "ueditor-hg";
+@icon-fullscreen: "\e918";
+@icon-source: "\e900";
+@icon-undo: "\e901";
+@icon-redo: "\e902";
+@icon-bold: "\e903";
+@icon-italic: "\e904";
+@icon-underline: "\e905";
+@icon-fontborder: "\e907";
+@icon-strikethrough: "\e90f";
+@icon-superscript: "\e908";
+@icon-subscript: "\e909";
+@icon-removeformat: "\e90a";
+@icon-formatmatch: "\e90b";
+@icon-autotypeset: "\e90c";
+@icon-blockquote: "\e90d";
+@icon-pasteplain: "\e90e";
+@icon-forecolor: "\e906";
+@icon-backcolor: "\e910";
+@icon-insertorderedlist: "\e911";
+@icon-insertunorderedlist: "\e912";
+@icon-selectall: "\e913";
+@icon-cleardoc: "\e914";
+@icon-lineheight: "\e917";
+@icon-directionalityltr: "\e919";
+@icon-directionalityrtl: "\e91a";
+@icon-indent: "\e91b";
+@icon-justifyleft: "\e91c";
+@icon-justifycenter: "\e91e";
+@icon-justifyright: "\e91d";
+@icon-justifyjustify: "\e91f";
+@icon-touppercase: "\e920";
+@icon-tolowercase: "\e921";
+@icon-link: "\e922";
+@icon-unlink: "\e923";
+@icon-anchor: "\e924";
+@icon-imagenone: "\e925";
+@icon-imageleft: "\e926";
+@icon-imageright: "\e927";
+@icon-imagecenter: "\e928";
+@icon-simpleupload: "\e929";
+@icon-insertimage: "\e92a";
+@icon-emotion: "\e92b";
+@icon-scrawl: "\e92c";
+@icon-insertvideo: "\e92d";
+@icon-music: "\e92e";
+@icon-attachment: "\e92f";
+@icon-map: "\e930";
+@icon-gmap: "\e931";
+@icon-insertframe: "\e932";
+@icon-webapp: "\e932";
+@icon-pagebreak: "\e933";
+@icon-template: "\e934";
+@icon-background: "\e935";
+@icon-horizontal: "\e936";
+@icon-date: "\e937";
+@icon-time: "\e938";
+@icon-spechars: "\e939";
+@icon-snapscreen: "\e93a";
+@icon-wordimage: "\e94f";
+@icon-insertrow: "\e957";
+@icon-deleterow: "\e940";
+@icon-deletecol: "\e941";
+@icon-insertcol: "\e956";
+@icon-mergecells: "\e942";
+@icon-mergeright: "\e943";
+@icon-mergedown: "\e944";
+@icon-splittocells: "\e945";
+@icon-splittorows: "\e946";
+@icon-splittocols: "\e947";
+@icon-charts: "\e948";
+@icon-print: "\e949";
+@icon-preview: "\e94a";
+@icon-searchreplace: "\e94b";
+@icon-help: "\e94c";
+@icon-drafts: "\e951";
+@icon-emoticon: "\e92b";
+@icon-aligntd: "\e925";
+@icon-copy: "\e94e";
+@icon-paste: "\e951";
+@icon-inserttable: "\e954";
+@icon-table: "\e954";
+@icon-deletetable: "\e93d";
+@icon-insertparagraphbeforetable: "\e95e";
+@icon-aligntable: "\e91f";
+@icon-tablealignment-left: "\e950";
+@icon-tablealignment-center: "\e94d";
+@icon-tablealignment-right: "\e93c";
+@icon-rowspacingtop: "\e915";
+@icon-rowspacingbottom: "\e916";
+@icon-insertparagraphtrue: "\e952";
+@icon-insertparagraph: "\e953";
+@icon-insertrownext: "\e958";
+@icon-insertcolnext: "\e955";
+@icon-code: "\e900";
+@icon-insertcaption: "\e959";
+@icon-deletecaption: "\e959";
+@icon-inserttitlecol: "\e95a";
+@icon-deletetitlecol: "\e95a";
+@icon-inserttitle: "\e95b";
+@icon-deletetitle: "\e95b";
+@icon-edittd: "\e95c";
+@icon-edittable: "\e95d";
+@icon-formula: "\f121";
+@icon-cut: "\f121";
+@icon-outdent: "\f121";
+@icon-delete: "\f121";
+@icon-close: "\e962";

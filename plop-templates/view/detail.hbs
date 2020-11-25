@@ -1,0 +1,36 @@
+<template>
+    <page-detail>
+        <h5 class="h5-title">
+            基本信息
+        </h5>
+        <div class="flex-row">
+            <div class="item">
+                <span class="label">
+                    姓名
+                </span>
+                <span class="value">
+                    张三
+                </span>
+            </div>
+        </div>
+    </page-detail>
+</template>
+
+<script>
+/* eslint-disable no-restricted-globals */
+import PageDetail from '@/view/components/page/detail.vue';
+
+export default {
+    name: 'Detail',
+    components: {
+        'page-detail': PageDetail,
+    },
+    data() {
+        return {
+            info: {},
+        };
+    },
+    created() {},
+    methods: {},
+};
+</script>

@@ -1,0 +1,64 @@
+@import "../../less/variables.less";
+.tox-silver-sink {
+    z-index: 300 !important;
+}
+.mention {
+    height: 16px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+}
+.errorMessage {
+    color: @errColor;
+    padding-left: 80px;
+}
+.ivu-upload-list-file {
+    line-height: 17.6px;
+}
+
+// 活动图片
+.pictures {
+    &-wrapper {
+        display: flex;
+        flex-flow: row;
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+    &-item {
+        position: relative;
+        width: 196px;
+        height: auto;
+        margin-right: 24px;
+        margin-bottom: 28px;
+        img {
+            width: 100%;
+            height: 110px;
+            border-radius: 4px;
+        }
+        p {
+            height: 21px;
+            margin-top: 6px;
+            font-size: 14px;
+            color: @fontColor;
+            text-align: center;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            word-break: keep-all;
+        }
+        .ivu-icon {
+            position: absolute;
+            right: -10px;
+            top: -10px;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+    &-upload {
+        margin-bottom: 24px;
+        p {
+            font-size: 14px;
+            color: @fontColor;
+        }
+    }
+}

@@ -1,0 +1,106 @@
+@import "../../../less/variables";
+.present {
+    .page-header {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+    }
+    .ivu-form {
+        display: flex;
+        flex-flow: row;
+    }
+    .ivu-form-item {
+        margin-bottom: 0;
+        margin-right: 24px;
+    }
+    .ivu-tabs {
+        width: 100%;
+    }
+    .common-list-search {
+        width: 100%;
+    }
+    .ivu-input-wrapper,
+    .ivu-select {
+        width: 240px;
+    }
+}
+#add-present {
+    .ivu-input-wrapper,
+    .ivu-select,
+    .ivu-input-number {
+        width: 260px;
+        margin-right: 16px;
+    }
+    .ivu-select .ivu-select-selection {
+        height: auto;
+        min-height: 36px;
+    }
+    .gift-images {
+        .item {
+            position: relative;
+            width: 90px;
+            height: 90px;
+            background-image: url("../../../assets/images/upload/img-default.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 90px;
+            margin-right: 16px;
+            border: 1px dashed @borderColor;
+            &:hover {
+                cursor: pointer;
+            }
+            .ivu-icon-ios-close-circle {
+                position: absolute;
+                right: -10px;
+                top: -10px;
+                z-index: 10;
+            }
+            img {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                border-radius: 4px;
+            }
+            .loading {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                display: flex;
+                flex-flow: row;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}
+.present-info {
+    padding-left: 88px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid @borderColor;
+    .item {
+        margin-right: 100px;
+        font-size: 14px;
+        color: @black;
+        span {
+            color: @fontColor;
+        }
+    }
+    .item:last-child {
+        margin-right: 0;
+    }
+}
+.spin-icon-load {
+    animation: ani-demo-spin 1s linear infinite;
+}
+@keyframes ani-demo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
